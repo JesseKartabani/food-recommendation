@@ -24,6 +24,7 @@ def enter_button():
     with open('food.csv', 'a') as f:
         w = csv.writer(f, dialect=csv)
         w.writerow([food])
+        user_entry.delete(0, 10)
 
 def guess_food():
     """Prints a randomly selected index in food.csv """
