@@ -58,7 +58,7 @@ entry_button.place(x=300, y=82)
 
 # displays Pick a food as a button
 # 1. buttom calls guess_food on click
-pick_food = Button(root, text="Pick a food", command=lambda: [guess_food(), button_pressed(), clear_label()])
+pick_food = Button(root, text="Pick a food", command=lambda: [guess_food(), button_pressed()])
 pick_food.pack(pady=30)
 
 root.mainloop()
