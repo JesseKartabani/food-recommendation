@@ -20,4 +20,8 @@ label = ttk.Label(root, padding=10, text="Enter your favourite meals")
 label.config(font=("Times New Roman",20))
 label.pack()
 
+# widget allows user to input foods
+user_entry = tk.Entry (root)
+user_entry.pack(pady=30)
+
 root.mainloop()
