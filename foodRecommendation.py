@@ -33,6 +33,7 @@ def guess_food():
         reader = csv.reader(f)
         chosen_row = random.choice(list(reader))
         label1 = ttk.Label(root, padding=10, text=chosen_row)
+        label1.configure(background='#ADD8E6')
         label1.pack()
         #run clear_label after 2000ms (2s)
         root.after(2000, clear_label, label1)
