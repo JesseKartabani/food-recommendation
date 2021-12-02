@@ -39,7 +39,9 @@ def guess_food():
 
 
 root = tk.Tk()
+# set window size
 root.geometry("400x300")
+# set window title
 root.title("Food Recommendations")
 
 # static label 
