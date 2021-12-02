@@ -2,6 +2,7 @@ import random
 import csv
 import tkinter as tk
 from tkinter import Button, ttk
+from tkinter.constants import RAISED, RIDGE, SUNKEN
 
 # -- Windows only configuration --
 try:
@@ -68,6 +69,6 @@ entry_button.place(x=300, y=82)
 # displays Pick a food as a button
 # 1. buttom calls guess_food on click
 pick_food = Button(root, text="Pick a food", command=guess_food)
-pick_food.pack(pady=30)
+pick_food.pack(pady=20)
 
 root.mainloop()
