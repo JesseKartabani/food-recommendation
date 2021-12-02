@@ -11,6 +11,10 @@ except:
     pass
 # -- End Windows only configuration --
 
+def button_pressed():
+    #run clear_label after 2000ms (2s)
+    root.after(2000, clear_label)
+
 def clear_label():
     # remove text
     label1['text'] = ""
