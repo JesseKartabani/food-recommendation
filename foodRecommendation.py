@@ -29,7 +29,7 @@ user_entry.pack(pady=10)
 
 # button calls enter_button on click
 entry_button = Button(root, text="Enter", command=enter_button)
-entry_button.pack()
+entry_button.place(x=300, y=82)
 
 
 
