@@ -17,7 +17,7 @@ def enter_button():
     food = user_entry.get()
 
     with open('food.csv', 'a') as f:
-        w = csv.writer(f,dialect='excel-tab')
+        w = csv.writer(f, dialect=csv)
         w.writerow([food])
 
 def guess_food():
