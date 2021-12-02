@@ -42,6 +42,10 @@ def guess_food():
 root = tk.Tk()
 # set window size
 root.geometry("400x300")
+# set minimum window size value
+root.minsize(400, 300)
+# set maximum window size value
+root.maxsize(400, 300)
 # set window background color
 root.configure(bg='#ADD8E6')
 # set window title
