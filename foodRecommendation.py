@@ -33,10 +33,10 @@ label.pack()
 user_entry = tk.Entry (root)
 user_entry.pack(pady=10)
 
-# button calls enter_button on click
+# displays enter button
+# 1. button calls enter_button on click
 entry_button = Button(root, text="Enter", command=enter_button)
 entry_button.place(x=300, y=82)
-
 
 
 root.mainloop()
