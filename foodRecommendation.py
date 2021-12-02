@@ -1,6 +1,6 @@
 import csv
 import tkinter as tk
-from tkinter import ttk
+from tkinter import Button, ttk
 
 # -- Windows only configuration --
 try:
@@ -26,5 +26,11 @@ label.pack()
 # widget allows user to input foods
 user_entry = tk.Entry (root)
 user_entry.pack(pady=10)
+
+# button calls enter_button on click
+entry_button = Button(root, text="Enter", command=enter_button)
+entry_button.pack()
+
+
 
 root.mainloop()
