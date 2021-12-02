@@ -6,6 +6,6 @@ Desktop application created with python and tkinter. The goal for this applicati
 
 In order to build this, you must have git installed. Then paste the following command in a directory of your choice.
 
-~~~ git
+~~~
 git clone https://github.com/JesseKartabani/food-recommendation.git
 ~~~
