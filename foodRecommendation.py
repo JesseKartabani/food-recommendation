@@ -11,8 +11,14 @@ except:
 # -- End Windows only configuration --
 
 def enter_button():
-    """Writes user_input to food.csv"""
+    """Appends user_input to food.csv"""
+
     food = user_entry.get()
+
+    with open('food.csv', 'a') as f:
+        w = csv.writer(f,dialect='excel-tab')
+        w.writerow([food])
+
 
 root = tk.Tk()
 root.geometry("400x300")
