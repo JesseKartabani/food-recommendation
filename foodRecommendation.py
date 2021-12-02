@@ -33,10 +33,14 @@ label.pack()
 user_entry = tk.Entry (root)
 user_entry.pack(pady=10)
 
-# displays enter button
+# displays Enter button
 # 1. button calls enter_button on click
 entry_button = Button(root, text="Enter", command=enter_button)
 entry_button.place(x=300, y=82)
 
+# displays Pick a food as a button
+# 1. buttom calls guess_food on click
+pick_food = Button(root, text="Pick a food", command=guess_food)
+pick_food.pack(pady=30)
 
 root.mainloop()
