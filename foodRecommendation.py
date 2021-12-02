@@ -11,6 +11,10 @@ except:
     pass
 # -- End Windows only configuration --
 
+def clear_label():
+    # remove text
+    label1['text'] = ""
+
 def enter_button():
     """Appends user_input to food.csv"""
 
