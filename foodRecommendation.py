@@ -12,7 +12,8 @@ except:
 # -- End Windows only configuration --
 
 def clear_label(widget):
-    # remove text
+    """Destorys widget"""
+    
     widget.destroy()
 
 def enter_button():
