@@ -1,4 +1,4 @@
-# A simple tkinter window
+
 import tkinter as tk
 from tkinter import ttk
 
@@ -10,6 +10,9 @@ except:
     pass
 # -- End Windows only configuration --
 
+def enter_button():
+    """Writes user_input to food.csv"""
+    food = user_entry.get()
 
 root = tk.Tk()
 root.geometry("400x300")
