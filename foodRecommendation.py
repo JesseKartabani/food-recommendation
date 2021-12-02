@@ -11,13 +11,9 @@ except:
     pass
 # -- End Windows only configuration --
 
-def button_pressed():
-    #run clear_label after 2000ms (2s)
-    root.after(2000, clear_label)
-
-def clear_label():
+def clear_label(widget):
     # remove text
-    label1['text'] = ""
+    widget.destroy()
 
 def enter_button():
     """Appends user_input to food.csv"""
@@ -36,6 +32,8 @@ def guess_food():
         chosen_row = random.choice(list(reader))
         label1 = ttk.Label(root, padding=10, text=chosen_row)
         label1.pack()
+        #run clear_label after 2000ms (2s)
+        root.after(2000, clear_label, label1)
 
 
 root = tk.Tk()
@@ -58,7 +56,7 @@ entry_button.place(x=300, y=82)
 
 # displays Pick a food as a button
 # 1. buttom calls guess_food on click
-pick_food = Button(root, text="Pick a food", command=lambda: [guess_food(), button_pressed()])
+pick_food = Button(root, text="Pick a food", command=guess_food)
 pick_food.pack(pady=30)
 
 root.mainloop()
