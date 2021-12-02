@@ -5,7 +5,10 @@ Desktop application created with python and tkinter. The goal for this applicati
 ## Building
 
 In order to build this, you must have git installed. Then paste the following command in a directory of your choice.
+I've created a virtual enviroment for this project so you dont need to worry about installing any libraries
 
 ~~~
 git clone https://github.com/JesseKartabani/food-recommendation.git
 ~~~
+
+Alternatively you can download the code as a .zip file and extract it.
