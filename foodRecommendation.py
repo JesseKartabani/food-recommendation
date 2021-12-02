@@ -15,6 +15,7 @@ root = tk.Tk()
 root.geometry("400x300")
 root.title("Food Recommendations")
 
+# static label 
 label = ttk.Label(root, padding=10, text="Enter your favourite meals")
 label.config(font=("Times New Roman",20))
 label.pack()
