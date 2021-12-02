@@ -22,6 +22,6 @@ label.pack()
 
 # widget allows user to input foods
 user_entry = tk.Entry (root)
-user_entry.pack(pady=30)
+user_entry.pack(pady=10)
 
 root.mainloop()
