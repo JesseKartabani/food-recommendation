@@ -1,3 +1,4 @@
+import random
 import csv
 import tkinter as tk
 from tkinter import Button, ttk
@@ -21,6 +22,12 @@ def enter_button():
 
 def guess_food():
     """Prints a randomly selected index in food.csv """
+
+    with open('food.csv') as f:
+        reader = csv.reader(f)
+        chosen_row = random.choice(list(reader))
+        label1 = ttk.Label(root, padding=10, text=chosen_row)
+        label1.pack()
 
 
 root = tk.Tk()
