@@ -19,6 +19,9 @@ def enter_button():
         w = csv.writer(f,dialect='excel-tab')
         w.writerow([food])
 
+def guess_food():
+    """Prints a randomly selected index in food.csv """
+
 
 root = tk.Tk()
 root.geometry("400x300")
