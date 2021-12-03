@@ -1,5 +1,8 @@
 # Food Recommendations
 
+![demo](https://user-images.githubusercontent.com/69617120/144524917-ec40d027-64ec-4401-9de4-8f88e19cd25c.png)
+
+
 Desktop application created with python and tkinter. The goal for this application is to provide a way for users to enter and save their favorite meals and then have the program randomly choose one for when they cant decide theirself.
 
 ## Building
