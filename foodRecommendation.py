@@ -85,6 +85,7 @@ pick_food.pack(pady=20)
 # displays Reset button
 # 1. button calls clear_csv on click
 reset_button = Button(root, text="Reset", command=clear_csv)
+reset_button.config(bg="#ed3833", fg="white", bd=0)
 reset_button.place(x=300, y=120)
 
 root.mainloop()
