@@ -43,6 +43,14 @@ def guess_food():
         root.after(2000, clear_label, label1)
 
 
+def clear_csv():
+    """ Clears the contents of food.csv"""
+
+    f = open("food.csv", "w")
+    f.truncate()
+    f.close()
+
+
 root = tk.Tk()
 # set window size
 root.geometry("400x300")
@@ -70,8 +78,13 @@ entry_button = Button(root, text="Enter", command=enter_button)
 entry_button.place(x=300, y=82)
 
 # displays Pick a food as a button
-# 1. buttom calls guess_food on click
+# 1. button calls guess_food on click
 pick_food = Button(root, text="Pick a food", command=guess_food)
 pick_food.pack(pady=20)
+
+# displays Reset button
+# 1. button calls clear_csv on click
+reset_button = Button(root, text="Reset", command=clear_csv)
+reset_button.place(x=300, y=120)
 
 root.mainloop()
