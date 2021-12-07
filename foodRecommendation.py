@@ -81,6 +81,7 @@ entry_button.place(x=300, y=82)
 # displays Pick a food as a button
 # 1. button calls guess_food on click
 pick_food = Button(root, text="Pick a food", command=guess_food)
+pick_food.config(bg="#1089ff", fg="white", bd=0)
 pick_food.pack(pady=20)
 
 # displays Reset button
