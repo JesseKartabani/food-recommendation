@@ -56,8 +56,8 @@ root.configure(bg='#ADD8E6')
 root.title("Food Recommendations")
 
 # static label
-label = ttk.Label(root, padding=10, text="Enter your favourite meals one at a time", wraplength=200)
-label.config(font=("Times New Roman", 18), background='#ADD8E6')
+label = ttk.Label(root, padding=10, text="Enter your favourite meals one at a time")
+label.config(font=("Times New Roman", 18), background='#ADD8E6', wraplength=200)
 label.pack()
 
 # widget allows user to input foods
