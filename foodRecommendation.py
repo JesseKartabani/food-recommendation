@@ -51,43 +51,45 @@ def clear_csv():
     f.close()
 
 
-root = tk.Tk()
-# set window size
-root.geometry("400x300")
-# set minimum window size value
-root.minsize(400, 300)
-# set maximum window size value
-root.maxsize(400, 300)
-# set window background color
-root.configure(bg='#ADD8E6')
-# set window title
-root.title("Food Recommendations")
+if __name__ == "__main__":
 
-# static label
-label = ttk.Label(root, padding=10, text="Enter your favourite meals one at a time")
-label.config(font=("Times New Roman", 18), background='#ADD8E6', wraplength=200)
-label.pack()
+    root = tk.Tk()
+    # set window size
+    root.geometry("400x300")
+    # set minimum window size value
+    root.minsize(400, 300)
+    # set maximum window size value
+    root.maxsize(400, 300)
+    # set window background color
+    root.configure(bg='#ADD8E6')
+    # set window title
+    root.title("Food Recommendations")
 
-# widget allows user to input foods
-user_entry = tk.Entry(root)
-user_entry.pack(pady=10)
+    # static label
+    label = ttk.Label(root, padding=10, text="Enter your favourite meals one at a time")
+    label.config(font=("Times New Roman", 18), background='#ADD8E6', wraplength=200)
+    label.pack()
 
-# displays Enter button
-# 1. button calls enter_button on click
-entry_button = Button(root, text="Enter", command=enter_button)
-entry_button.config(bg="#00bd56", fg="white", bd=0)
-entry_button.place(x=300, y=82)
+    # widget allows user to input foods
+    user_entry = tk.Entry(root)
+    user_entry.pack(pady=10)
 
-# displays Pick a food as a button
-# 1. button calls guess_food on click
-pick_food = Button(root, text="Pick a food", command=guess_food)
-pick_food.config(bg="#1089ff", fg="white", bd=0)
-pick_food.pack(pady=20)
+    # displays Enter button
+    # 1. button calls enter_button on click
+    entry_button = Button(root, text="Enter", command=enter_button)
+    entry_button.config(bg="#00bd56", fg="white", bd=0)
+    entry_button.place(x=300, y=82)
 
-# displays Reset button
-# 1. button calls clear_csv on click
-reset_button = Button(root, text="Reset", command=clear_csv)
-reset_button.config(bg="#ed3833", fg="white", bd=0)
-reset_button.place(x=300, y=120)
+    # displays Pick a food as a button
+    # 1. button calls guess_food on click
+    pick_food = Button(root, text="Pick a food", command=guess_food)
+    pick_food.config(bg="#1089ff", fg="white", bd=0)
+    pick_food.pack(pady=20)
 
-root.mainloop()
+    # displays Reset button
+    # 1. button calls clear_csv on click
+    reset_button = Button(root, text="Reset", command=clear_csv)
+    reset_button.config(bg="#ed3833", fg="white", bd=0)
+    reset_button.place(x=300, y=120)
+
+    root.mainloop()
