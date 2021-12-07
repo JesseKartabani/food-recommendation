@@ -2,7 +2,6 @@ import random
 import csv
 import tkinter as tk
 from tkinter import Button, ttk
-from tkinter.constants import RAISED, RIDGE, SUNKEN
 
 # -- Windows only configuration --
 try:
@@ -12,10 +11,12 @@ except:
     pass
 # -- End Windows only configuration --
 
+
 def clear_label(widget):
     """Destorys widget"""
-    
+
     widget.destroy()
+
 
 def enter_button():
     """Appends user_input to food.csv"""
@@ -28,6 +29,7 @@ def enter_button():
             w.writerow([food])
             user_entry.delete(0, 10)
 
+
 def guess_food():
     """Prints a randomly selected index in food.csv """
 
@@ -37,7 +39,7 @@ def guess_food():
         label1 = ttk.Label(root, padding=10, text=chosen_row)
         label1.configure(background='#ADD8E6')
         label1.pack()
-        #run clear_label after 2000ms (2s)
+        # run clear_label after 2000ms (2s)
         root.after(2000, clear_label, label1)
 
 
@@ -53,13 +55,13 @@ root.configure(bg='#ADD8E6')
 # set window title
 root.title("Food Recommendations")
 
-# static label 
+# static label
 label = ttk.Label(root, padding=10, text="Enter your favourite meals one at a time", wraplength=200)
-label.config(font=("Times New Roman",18), background='#ADD8E6')
+label.config(font=("Times New Roman", 18), background='#ADD8E6')
 label.pack()
 
 # widget allows user to input foods
-user_entry = tk.Entry (root)
+user_entry = tk.Entry(root)
 user_entry.pack(pady=10)
 
 # displays Enter button
