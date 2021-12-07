@@ -13,13 +13,13 @@ except:
 
 
 def clear_label(widget):
-    """Destorys widget"""
+    """ Destorys widget """
 
     widget.destroy()
 
 
 def enter_button():
-    """Appends user_input to food.csv"""
+    """ Appends user_input to food.csv """
 
     food = user_entry.get()
 
@@ -31,7 +31,7 @@ def enter_button():
 
 
 def guess_food():
-    """Prints a randomly selected index in food.csv """
+    """ Prints a randomly selected index in food.csv """
 
     with open('food.csv') as f:
         reader = csv.reader(f)
@@ -44,7 +44,7 @@ def guess_food():
 
 
 def clear_csv():
-    """ Clears the contents of food.csv"""
+    """ Clears the contents of food.csv """
 
     f = open("food.csv", "w")
     f.truncate()
