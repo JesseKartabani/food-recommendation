@@ -75,6 +75,7 @@ user_entry.pack(pady=10)
 # displays Enter button
 # 1. button calls enter_button on click
 entry_button = Button(root, text="Enter", command=enter_button)
+entry_button.config(bg="#00bd56", fg="white", bd=0)
 entry_button.place(x=300, y=82)
 
 # displays Pick a food as a button
